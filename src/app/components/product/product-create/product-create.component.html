@@ -1,0 +1,24 @@
+<!-- <p [id]="atributoId">product-create works!</p> -->
+<mat-card> <!--Para criar um card-->
+    <mat-card-title>Novo Produto</mat-card-title>
+    <form>
+
+        <mat-form-field>
+            <input matInput name="nome" placeholder="Nome" [(ngModel)]="product.nome"> <!--'[(ngModel)]="product.nome"' referenciando o campo no model-->
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput name="senha" placeholder="Senha" [(ngModel)]="product.senha">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput name="cpf" placeholder="CPF" [(ngModel)]="product.cpf">
+        </mat-form-field>
+
+    </form>
+
+    <!-- Como se fosse o onclick -->
+    <button (click)="createProduct()" color="primary" mat-raised-button>Salvar</button>
+
+    <button (click)="cancel()" mat-raised-button>Cancelar</button>
+</mat-card>

@@ -1,0 +1,34 @@
+<mat-sidenav-container class="container">
+     <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">  <!--Precisou dessas propriedades para aparecer todo o conteudo-->
+
+        <mat-nav-list class="nav-list">
+
+            <a mat-list-item routerLink="/"> <!--Para deixar o item em forma de lista, junto com a classe acima 'nav-list'--> <!--'routerLink' para definir o component tipado quando clicar no elemento-->
+                <i class="material-icons">home</i>
+                Início
+            </a>
+
+            <a mat-list-item routerLink="/products"> <!--Para deixar o item em forma de lista--> <!--'routerLink' para definir o component tipado quando clicar no elemento-->
+                <i class="material-icons">storefront</i>
+                Produtos
+            </a>
+
+            <a mat-list-item routerLink="/products/create"> <!--Para deixar o item em forma de lista--> <!--'routerLink' para definir o component tipado quando clicar no elemento-->
+                <i class="material-icons">storefront</i>
+                Inserir Produtos
+            </a>
+
+        </mat-nav-list>
+
+    </mat-sidenav>
+
+    <!-- Colocando o conteudo do home na tela -->
+    <mat-sidenav-content class="content">
+
+        <!-- para mudar de acordo com a navegação do usuario --> 
+        <!--Em conjunto com 'routerLink'-->
+        <router-outlet></router-outlet> 
+
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

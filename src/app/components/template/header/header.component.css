@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .logo {
+    max-height: 72px;
+}
+
+.header .title-group{
+    padding-left: 25px; /* Espaçamento entre o emoji e o 'Aplicação crud'*/
+}
+
+.header .title-group i {
+    max-height: 72px;
+}

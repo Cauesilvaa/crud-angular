@@ -1,0 +1,6 @@
+.footer {
+    position: fixed;
+    bottom: 0; /*Para totalmente na parte de baixo da tela*/
+    display: flex;
+    justify-content: flex-end; /*Para deixar totalmente na parte direita */
+}
