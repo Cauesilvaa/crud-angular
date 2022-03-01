@@ -23,6 +23,8 @@ export class ProductCreateComponent implements OnInit {
   constructor(private productService: ProductService,
               private router: Router) { }
 
+
+  // É chamado quando o component é inicializado, igual 'window.onload'              
   ngOnInit(): void {}
 
   //Exemplo de função, e to passando ela no arquivo html

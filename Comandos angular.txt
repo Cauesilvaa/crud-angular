@@ -1,0 +1,23 @@
+Pelo cmd, e no meu usuario
+- npm install -g @angular/cli
+
+Criar projeto
+- ng new nomeDoProjeto --minimal(opcinal) -> yes -> css
+
+Rodar projeto
+- npm start
+
+Dps de rodar, no arquivo 'angular.json', na linha 10 e 11 troca de:
+"inlineTemplate": true PARA "inlineTemplate": false
+"inlineStyle": true PARA "inlineStyle": false
+Isso serve pq quando gera o arquivo de compilação com o 'true' cria 1 arquivo para html, css, e ts. e com o false gera um arquivo para cada.
+Mas gerou essa config pq usei o '--minimal'.
+
+Intalar componentes material
+- ng add @angular/material
+
+Criar um componente
+ng g c components/camminhoqualuqer(no exemplo aq ng g c components/template/header)
+
+Criar diretiva 
+ng g d directives/nomequalquer(Ex: ng g d directives/red)

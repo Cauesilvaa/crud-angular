@@ -9,7 +9,7 @@ import { Product } from './product.model';
 })
 export class ProductService {
 
-  baseUrl = "http://localhost:8080/user/insert";
+  baseUrl = "http://localhost:8080/user";
 
   //'MatSnackBar' é um import do 'material' que exibe uma mensagem
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
@@ -25,6 +25,11 @@ export class ProductService {
 
   // Função para criar um produto
   create(product: Product): Observable<Product>{ //'Observable<Product>': é o retorno dessa função q vai ser um 'observable' do tipo produto
-    return this.http.post<Product>(this.baseUrl, product)
+    return this.http.post<Product>(`${this.baseUrl}/insert`, product)
+  }
+
+  //Função para ler um produto
+  read(): Observable<Product[]>{
+    return this.http.get<Product[]>(`${this.baseUrl}2`)
   }
 }
