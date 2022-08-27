@@ -24,7 +24,7 @@ import { ProductCreateComponent } from './components/product/product-create/prod
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http' // Import para poder fazer o CRUD
 
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -55,7 +55,7 @@ import { ProductReadComponent } from './components/product/product-read/product-
     MatCardModule,
     MatButtonModule,
     MatSnackBarModule,
-    HttpClientModule,
+    HttpClientModule, // Import para poder fazer o CRUD
     FormsModule,
     MatFormFieldModule,
     MatInputModule
